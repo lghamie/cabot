@@ -121,7 +121,7 @@ router.register(r'jenkins_checks', create_viewset(
     ),
 ))
 
-'''
+
 Omitting user API, could expose/allow modifying dangerous fields.
 
 router.register(r'users', create_viewset(
@@ -147,7 +147,6 @@ router.register(r'user_profiles', create_viewset(
         'fallback_alert_user',
     ),
 ))
-'''
 
 router.register(r'shifts', create_viewset(
     arg_model=models.Shift,
