@@ -121,9 +121,6 @@ router.register(r'jenkins_checks', create_viewset(
     ),
 ))
 
-
-Omitting user API, could expose/allow modifying dangerous fields.
-
 router.register(r'users', create_viewset(
     arg_model=django_models.User,
     arg_fields=(
